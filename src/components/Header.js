@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
 //stateless functional component 
@@ -37,5 +38,11 @@ const Header = (props) => (
 //         )
 //     }
 // }
+
+Header.propTypes = {
+    tagline: PropTypes.string.isRequired,
+
+
+}
 
 export default Header; 
